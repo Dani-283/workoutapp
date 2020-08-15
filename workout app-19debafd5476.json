@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "workoutapp-projekt",
+  "private_key_id": "19debafd54762ef527e765e11ac1c6f80f830141",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCpHFSxS3RtpDqq\nzxAfF6bJXgJWoK2DoLZCCM4yZGmBCv6T8swk+vbayKrnLgvftyNaAUdGBBdCvitU\nPdkyXa0QHvxsIcyp5k40LjXX3AKOFn+KP1G65UB9Qp+x7aoBunKIk4Un74HewcC/\nrC3TgpN7DpBfaXtPl1eHhJdosTwA1pLOKAEIUzUE0T51pfN7CIhMpHh0kBhGeGqE\neNPDTYt5u45/waSXiFkwym0mW+DP8hTpxpa75uQvup1Sp5H+pSsaZaUIVRrGm5dY\nTUPJUhAXUGDPFab6QEi6VNF+1DdlkVEq1aSAhsaHYt/qMkyiheVe5b3qe2nOo5Xf\nW3hQlSq5AgMBAAECggEAGS/L2gzBE56yUYP9xIZlxA0D2nobja9Z0H5Lk6F1PeUb\neIE2Gss5XpQk3BdKvnBMzBgaUO5wC8k+CScdr7eC/JPY3ZQFIvLXB++FURfcAOSP\nQfxfRFo7n3b/njpQUpSTKriUoZeK51iXyBRb+OoJjs+Np3WS345MrjWMcBPMOjAn\nSw7VGkIKUJChIct7gEsqPcVaZNero9JwVAzyehMEpKkUTVvzYStEI8CDsQSESGaU\n5wVCd+or88UnQXCE72Ma8k8IUoi3cIceuNpwtpHtnokw6l7+ClMQBEG5gJUpf7Dg\nlJZTpocT1WZVXSDU5Mbku/NWVXb/qtRYMs/jCaWbNwKBgQDsxXPNt2LxHqhxM021\nmC054MJpi+2FDEXiepgfLT4++MOhnPSSWR3fv+vHu7810cS8EPB2pks5Qcpp2oq6\n7rKR9QlfaBK8WrGsr/Tg4ZYw56nTSiLpiIpgQTxCytntxa52FGBnMaDTNmX/e5Wg\nH2wDF0aym37XysZayRDJHhVV3wKBgQC22DF6wuEQixYvGzlFzuyISOpNaXP2AhdA\nR/NSWfOMjyfsFm558pon/L11AATW0iCr3MVIiQ+rhoRbtClZcwHJxgd8CX/geMbS\nhlv0tOoyg/aPdELm0FKf47HYO1vJC3t+6tO0MQT3xFA/CyhOqeoQA/Y3VhFni2br\nOsxAQmgiZwKBgQDCWKjfeOIMDSAyGux0XH7y/RxXSnYiOZq7demb3aU0Rzk9VPoj\njmbJHF3Kyr7+zDpyLG1U1tb0Hp6pGKu7GOcWi02wNFr8pG0m1B9q34BKkD2Do1zY\n2CzNKX7vTFZpp1O2tK8UxVW/SO2cMbL1hhVAzEBJpv0M3/LE3jma+8iDfQKBgAiU\nPkYXTL4c+I5/RYGsAtcmLLAzKXi6gmLGvXj4tX+729CtAMQCCQ+lQTJzLMbzlwrZ\nUfxkSfLvXdh7rJEA322bOBCu1Wwv3oxUN45UysRSAsiaWOVBkw7jfR27M0RMoJ/E\n3ugOgMArWuSKXnrKaCwWM4BHLovgM5UH7jt5oi8zAoGBAN5lwadi+iKfupBGTlpE\nACdD2+kff7rmZgCTn5zXmwklq/4CVk/wMvMmO4n73INekpLttvMHvhv/yOo+Npjp\nR8fJlbBodKGLUOSQq/bC5e+CMQU+v9gYk/F49hHjgSONSeD+dYHByrHOi4fupfJk\n1GbxykiSSgE0m4V9ARYcOvBu\n-----END PRIVATE KEY-----\n",
+  "client_email": "workoutapp@workoutapp-projekt.iam.gserviceaccount.com",
+  "client_id": "100775579088325378661",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/workoutapp%40workoutapp-projekt.iam.gserviceaccount.com"
+}
