@@ -2,6 +2,7 @@ const { db, admin } = require("../utility/admin");
 const { emptyString, emailCheck } = require("../utility/helpers");
 
 const config = require("../utility/config");
+const { uuid } = require("uuidv4");
 const firebase = require("firebase");
 firebase.initializeApp(config);
 
@@ -67,7 +68,7 @@ exports.signup = (req, res) => {
       else
         return res
           .status(500)
-          .json({ error: "Something went wrong, Try again" });
+          .json({ general: "Something went wrong, Try again" });
     });
 };
 
@@ -78,9 +79,9 @@ exports.login = (req, res) => {
   };
 
   let errors = {};
-
+  // const { valid, errors } = validateLoginData(user);
   if (emptyString(user.email)) errors.email = "email empty";
-  if (emptyString(user.password)) errors.password = "password empty9";
+  if (emptyString(user.password)) errors.password = "passwor empty9";
 
   if (Object.keys(errors).length > 0) return res.status(400).json(errors);
 
@@ -95,10 +96,8 @@ exports.login = (req, res) => {
     })
     .catch((err) => {
       console.error(err);
-      if (err.code === "auth/wrong-password") {
-        return res.status(403).json({ error: "Wrong password" });
-      }
-      return res.status(500).json({ error: err.code });
+
+      return res.status(403).json({ general: "Wrong password" });
     });
 };
 
@@ -113,6 +112,7 @@ exports.profileImg = (req, res) => {
 
   let imgFileName;
   let imgForUpload = {};
+  let generatedToken = uuid();
 
   busboy.on("file", (fieldname, file, filename, encoding, mimetype) => {
     console.log(fieldname);
@@ -131,12 +131,13 @@ exports.profileImg = (req, res) => {
   busboy.on("finish", () => {
     admin
       .storage()
-      .bucket()
+      .bucket(`${config.storageBucket}`)
       .upload(imgForUpload.filePath, {
         resumable: false,
         metadata: {
           metadata: {
             contentType: imgForUpload.mimetype,
+            firebaseStorageDownloadTokens: generatedToken,
           },
         },
       })
