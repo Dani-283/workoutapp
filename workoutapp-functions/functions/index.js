@@ -9,6 +9,8 @@ const {
   getWorkout,
   addExercise,
   deleteWorkout,
+  updateWorkout,
+  deleteExercise,
 } = require("./handlers/workouts");
 const {
   signup,
@@ -30,7 +32,11 @@ app.get("/workouts", getWorkouts);
 //posting a workout
 app.post("/workout", auth, postWorkout);
 app.get("/workout/:workoutId", getWorkout);
+app.put("/workout/:workoutId", updateWorkout);
+
 app.post("/workout/:workoutId/exercise", auth, addExercise);
+app.post("/exercises", deleteExercise);
+
 app.delete("/workout/:workoutId", auth, deleteWorkout);
 
 //user routes

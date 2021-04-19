@@ -4,8 +4,8 @@ let db = {
       userHandle: "user",
       body: "this is workout body",
       date: "2020-08-07T11:24:47.261Z",
-      likeCount: 5,
-      commentCount: 2,
+
+      exerciseCount: 2,
     },
   ],
   exercises: [

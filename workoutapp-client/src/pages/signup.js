@@ -21,6 +21,7 @@ const styles = {
   },
   title: {
     margin: "20px auto 20px auto",
+    maxWidth: "260px",
   },
   textField: {
     margin: "5px",
@@ -88,7 +89,7 @@ class signup extends Component {
         <Grid item sm />
         <Grid item sm>
           <Typography variant="h4" className={classes.title}>
-            Signup page
+            Signup to Workout App
           </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
             <TextField
@@ -166,7 +167,7 @@ class signup extends Component {
               variant="body2"
             >
               Already have an account?
-              <Link to="/signup"> login </Link>
+              <Link to="/login"> login </Link>
             </Typography>
           </form>
         </Grid>

@@ -6,3 +6,12 @@ export const LOADING_USER = "LOADING_USER";
 export const SET_ERRORS = "SET_ERRORS";
 export const LOADING_UI = "LOADING_UI";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
+export const LOADING_DATA = "LOADING_DATA";
+export const STOP_LOADING_UI = "STOP_LOADING_UI";
+
+export const SET_WORKOUTS = "SET_WORKOUTS";
+export const SET_WORKOUT = "SET_WORKOUT";
+export const DELETE_WORKOUT = "DELETE_WORKOUT";
+export const POST_WORKOUT = "POST_WORKOUT";
+export const ADD_EXERCISE = "ADD_EXERCISE";
+export const DELETE_EXERCISE = "DELETE_EXERCISE";
