@@ -26,6 +26,9 @@ const styles = {
   iconButton: {
     marginRight: "auto",
   },
+  loginButton: {
+    "&:hover": { backgroundColor: "rgb(66, 161, 250,0.7)" },
+  },
 };
 
 export class Navbar extends Component {
@@ -163,10 +166,20 @@ export class Navbar extends Component {
                     </Fragment>
                   ) : (
                     <Fragment>
-                      <Button color="inherit" component={Link} to="/login">
+                      <Button
+                        className={classes.loginButton}
+                        color="inherit"
+                        component={Link}
+                        to="/login"
+                      >
                         Login
                       </Button>
-                      <Button color="inherit" component={Link} to="/signup">
+                      <Button
+                        className={classes.loginButton}
+                        color="inherit"
+                        component={Link}
+                        to="/signup"
+                      >
                         Signup
                       </Button>
                     </Fragment>
